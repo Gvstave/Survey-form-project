@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF=8"/>
+    <meta name="viewport" content="width=device-width, initial-scal=1.0"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Thank you for being part of our research team, your feedback will be highly appreciated</p>
+    <div class="main-content">
+       <form id="survey-form">
+         <fieldset>
+           <label for="name-label" id="name-label">Name</label>
+           <input id="name" name="name" type="text" required placeholder="Enter your Name">
+         </fieldset>
+         <fieldset>
+           <label for="email-label" id="email-label">Email</label>
+           <input id="email" name="email" type="email" required placeholder="Enter your Email">
+         </fieldset>
+         <fieldset>
+           <label for="number-label" id="number-label">Number</label>
+           <input id="number" name="number" type="number" min="16" max="120" placeholder="Enter your age">
+         </fieldset>
+         <fieldset>
+           <label for="referrer">How did you hear about us?</label>
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Social Media</option>
+            <option value="2">Friends</option>
+            <option value="3">None</option>
+          </select>
+          <label for="suggestions">comment or suggestion:
+          <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="Provide a comment or suggestion"></textarea>
+        </label>
+         </fieldset>
+         <fieldset>
+        <legend>Would you recommend our services?</legend>
+        <label for="yes"><input id="yes" value="yes" type="radio" name="group" class="inline" checked /> Yes</label>
+        <label for="no"><input id="no" value="no" type="radio" name="group" class="inline" /> No</label>
+        <label for="maybe"><input id="maybe" value="maybe" type="radio" name="group" class="inline" /> Maybe</label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like us to improve?</legend>
+        <label for="challenge"><input value="challenge" type="checkbox" name="challenge" /> Challenges</label>
+        <label for="community"><input value="community" type="checkbox" name="community"> Community support</label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+       </form>
+    </div>
+  </body>
+</html>
